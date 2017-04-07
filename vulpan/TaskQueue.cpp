@@ -6,6 +6,7 @@ namespace vlp {
 	}
 
 	TaskQueue::~TaskQueue() {
+		std::lock_guard<std::mutex> lock(m_mutex);
 	}
 
 	std::shared_ptr<Task> TaskQueue::dequeue() {
