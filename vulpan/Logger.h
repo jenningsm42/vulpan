@@ -7,7 +7,7 @@
 
 class Logger {
 public:
-	Logger(const std::string& file);
+	Logger(std::string&& file);
 	~Logger();
 
 	// Log given message to stdout and to specified file

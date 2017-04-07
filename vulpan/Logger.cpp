@@ -2,7 +2,7 @@
 
 Logger logger("vulpes.log");
 
-Logger::Logger(const std::string& file) : m_fileName(file) {
+Logger::Logger(std::string&& file) : m_fileName(std::move(file)) {
 }
 
 Logger::~Logger() {
