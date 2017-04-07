@@ -6,6 +6,6 @@ namespace vlp {
 	}
 
 	void LogTask::run(Engine& engine) {
-		logger.log(m_message);
+		logger.log(std::move(m_message));
 	}
 }
