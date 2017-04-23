@@ -7,7 +7,7 @@ namespace vlp {
 	public:
 		LogTask(std::string&&);
 
-		void run(Engine& engine);
+		void run(Engine& engine) override;
 
 	private:
 		std::string m_message;

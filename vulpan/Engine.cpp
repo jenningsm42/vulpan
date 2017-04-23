@@ -1,8 +1,8 @@
 #include "include/Engine.h"
-#include "Logger.h"
 
 namespace vlp {
-	Engine::Engine() : m_running(false) {
+	Engine::Engine() :
+		m_running(false) {
 	}
 
 	Engine::~Engine() {
@@ -19,5 +19,13 @@ namespace vlp {
 
 	ThreadPool& Engine::getThreadPool() {
 		return m_threadPool;
+	}
+
+	ResourceCache& Engine::getResourceCache() {
+		return m_resourceCache;
+	}
+
+	ResourceLoader& Engine::getResourceLoader() {
+		return m_resourceLoader;
 	}
 }

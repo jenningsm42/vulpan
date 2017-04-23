@@ -124,21 +124,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\DDSParser.h" />
     <ClInclude Include="include\Engine.h" />
+    <ClInclude Include="include\LoadResourceTask.h" />
+    <ClInclude Include="include\Logger.h" />
     <ClInclude Include="include\LogTask.h" />
+    <ClInclude Include="include\Resource.h" />
+    <ClInclude Include="include\ResourceCache.h" />
+    <ClInclude Include="include\ResourceLoader.h" />
     <ClInclude Include="include\ScheduleTask.h" />
     <ClInclude Include="include\Task.h" />
     <ClInclude Include="include\TaskQueue.h" />
+    <ClInclude Include="include\TextureParser.h" />
+    <ClInclude Include="include\TextureResource.h" />
     <ClInclude Include="include\Thread.h" />
     <ClInclude Include="include\ThreadPool.h" />
     <ClInclude Include="include\vulpan.h" />
     <ClInclude Include="include\WaitTask.h" />
-    <ClInclude Include="Logger.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DDSParser.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="LoadResourceTask.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="LogTask.cpp" />
+    <ClCompile Include="ResourceCache.cpp" />
+    <ClCompile Include="ResourceLoader.cpp" />
     <ClCompile Include="ScheduleTask.cpp" />
     <ClCompile Include="TaskQueue.cpp" />
     <ClCompile Include="Thread.cpp" />
