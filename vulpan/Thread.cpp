@@ -1,6 +1,6 @@
 #include "include/Thread.h"
 #include "include/ThreadPool.h"
-#include "Logger.h"
+#include "include/Logger.h"
 
 namespace vlp {
 	Thread::Thread(Engine& engine, TaskQueue* taskQueue) :

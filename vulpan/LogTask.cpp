@@ -1,5 +1,5 @@
 #include "include/LogTask.h"
-#include "Logger.h"
+#include "include/Logger.h"
 
 namespace vlp {
 	LogTask::LogTask(std::string&& message) : m_message(std::move(message)) {
